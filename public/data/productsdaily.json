@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Diamonds by the Yard® Single Diamond Pendant",
+      "image": "/images/diamond-pendant.png",
+      "price": 1075,
+      "description": "A beautiful single diamond pendant set in yellow gold. Perfect for any occasion.",
+      "caratWeight": 0.05
+    },
+    {
+      "id": 2,
+      "name": "Open Heart Necklace",
+      "image": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-single-diamond-pendant-10769213_1031667_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+      "price": 750,
+      "description": "Open Heart Necklace designed by Elsa Peretti® in sterling silver.",
+      "caratWeight": 0.10
+    },
+    {
+      "id": 3,
+      "name": "Bone Cuff Bracelet",
+      "image": "/images/bone-cuff-bracelet.png",
+      "price": 1500,
+      "description": "Bold and timeless, this bone cuff bracelet is designed for the modern woman.",
+      "caratWeight": 0
+    },
+    {
+      "id": 4,
+      "name": "Bean® Design Pendant",
+      "image": "/images/bean-design-pendant.png",
+      "price": 1200,
+      "description": "The iconic Bean® Design Pendant in sterling silver, symbolizing elegance and simplicity.",
+      "caratWeight": 0.07
+    },
+    {
+      "id": 5,
+      "name": "Color by the Yard Necklace",
+      "image": "/images/color-by-the-yard-necklace.png",
+      "price": 950,
+      "description": "A colorful twist to the classic Diamonds by the Yard®, featuring a range of gemstones.",
+      "caratWeight": 0.08
+    }
+  ]
+  
