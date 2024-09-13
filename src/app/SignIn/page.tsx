@@ -11,7 +11,7 @@ const SignIn: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const user = { email, password }; // Dummy login success
+    const user = { email, password }; 
 
     if (user) {
       localStorage.setItem('user', JSON.stringify(user));

@@ -1,9 +1,19 @@
-{
-    "id": 1,
-    "name": "Elsa Peretti® Diamonds by the Yard® Single Diamond Pendant",
-    "image": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-single-diamond-pendant-10769213_1031666_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
-    "price": 1075,
-    "description": "A stunning yellow gold diamond pendant.",
-    "caratWeight": 0.05
-  }
-  
+[
+    {
+        "id": 1,
+        "name": "Elsa Peretti® Diamonds by the Yard® Single Diamond Pendant",
+        "image": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-single-diamond-pendant-10769213_1031666_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+        "price": 1075,
+        "description": "A stunning yellow gold diamond pendant.",
+        "caratWeight": 0.05
+      },
+      {
+        "id": 2,
+        "name": "Elsa Peretti® Diamonds by the Yard® Single Diamond Pendant",
+        "image": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-single-diamond-pendant-10769213_1031666_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+        "price": 1075,
+        "description": "A stunning yellow gold diamond pendant.",
+        "caratWeight": 0.05
+      }
+      
+]

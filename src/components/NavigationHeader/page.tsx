@@ -1,23 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaSearch, FaMapMarkerAlt, FaUserAlt, FaHeart, FaShoppingBag } from 'react-icons/fa';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import HighJewelryDropdown from '../HighJewelry/page';
-import { useRouter } from 'next/navigation';
+import SidePanel from '../SidePanel/page';
 
-// Define props for Header
-interface HeaderProps {
-  toggleLoginPanel: () => void; // Function to open login panel
-}
+const NavigationHeader: React.FC = () => {
+  const [isPanelOpen, setIsPanelOpen] = useState<boolean>(false);
 
-const Header: React.FC<HeaderProps> = ({ toggleLoginPanel }) => {
-  const router = useRouter();
+  const togglePanel = () => {
+    setIsPanelOpen(!isPanelOpen);
+  };
 
-  const handleSignInClick = () => {
-    router.push('/PersonalInformation');  // Chuyển hướng đến trang personal-info
+  const closePanel = () => {
+    setIsPanelOpen(false);
   };
 
   return (
-    <header className="bg-white py-4 shadow-sm">
+    <header className="bg-white py-4 shadow-sm relative">
       <nav className="container mx-auto flex justify-between items-center">
         {/* Left Section with Search, Location and Contact Us */}
         <div className="flex space-x-4">
@@ -35,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ toggleLoginPanel }) => {
         <div className="flex space-x-4">
           <AiOutlineCalendar className="text-xl cursor-pointer" />
           <span className="cursor-pointer">Book an Appointment</span>
-          <FaUserAlt className="text-xl cursor-pointer" onClick={handleSignInClick} /> {/* Chuyển hướng đến trang personal-info */}
+          <FaUserAlt className="text-xl cursor-pointer" onClick={togglePanel} /> {/* Open panel */}
           <FaHeart className="text-xl cursor-pointer" />
           <FaShoppingBag className="text-xl cursor-pointer" />
         </div>
@@ -43,10 +42,7 @@ const Header: React.FC<HeaderProps> = ({ toggleLoginPanel }) => {
 
       {/* Menu Items */}
       <ul className="flex justify-center space-x-6 mt-4">
-        <li>
-          {/* High Jewelry with dropdown */}
-          <HighJewelryDropdown />
-        </li>
+        <li><HighJewelryDropdown /></li>
         <li className="cursor-pointer hover:text-gray-500">Jewelry</li>
         <li className="cursor-pointer hover:text-gray-500">Gifts</li>
         <li className="cursor-pointer hover:text-gray-500">Love & Engagement</li>
@@ -55,8 +51,11 @@ const Header: React.FC<HeaderProps> = ({ toggleLoginPanel }) => {
         <li className="cursor-pointer hover:text-gray-500">Accessories</li>
         <li className="cursor-pointer hover:text-gray-500">Stories</li>
       </ul>
+
+      {/* Side Panel */}
+      <SidePanel isOpen={isPanelOpen} closePanel={closePanel} />
     </header>
   );
 };
 
-export default Header;
+export default NavigationHeader;

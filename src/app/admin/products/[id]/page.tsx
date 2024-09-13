@@ -21,7 +21,6 @@ const ProductDetail: React.FC = () => {
 
   useEffect(() => {
     if (!id) return;
-    git 
     const fetchProduct = async () => {
       try {
         const response = await fetch(`/data/products/${id}.json`);  // Fetch product details by ID
